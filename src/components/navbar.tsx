@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 px-5">
+    <div className="navbar bg-base-100 px-5 font-poppins">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -40,7 +40,7 @@ function Navbar() {
               </a>
               <ul className="p-2">
                 <li>
-                  <a>Courses</a>
+                  <a href="#courses">Courses</a>
                 </li>
                 <li>
                   <a>1 on 1</a>
@@ -79,7 +79,7 @@ function Navbar() {
             </a>
             <ul className="p-2">
               <li>
-                <a>Courses</a>
+                <a href="#courses">Courses</a>
               </li>
               <li>
                 <a>1 on 1</a>

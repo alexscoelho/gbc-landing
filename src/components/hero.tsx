@@ -2,7 +2,7 @@ import heroImage from "../assets/heroImage.jpg";
 
 function Hero() {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 font-mono">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={heroImage} className="max-w-sm rounded-lg shadow-2xl" />
         <div>

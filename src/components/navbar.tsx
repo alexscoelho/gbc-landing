@@ -43,7 +43,7 @@ function Navbar() {
                   <a href="#courses">Courses</a>
                 </li>
                 <li>
-                  <a>1 on 1</a>
+                  <a href="#1 on 1">1 on 1</a>
                 </li>
               </ul>
             </li>
@@ -82,7 +82,7 @@ function Navbar() {
                 <a href="#courses">Courses</a>
               </li>
               <li>
-                <a>1 on 1</a>
+                <a href="#1 on 1">1 on 1</a>
               </li>
             </ul>
           </li>

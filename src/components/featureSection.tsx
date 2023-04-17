@@ -1,19 +1,21 @@
 import React from "react";
-import FeatureCard from "./featureCard";
 
 interface Props {
   title: string;
+  id: string;
   children: React.ReactNode;
 }
 
-function FeatureSection({ title, children }: Props) {
+function FeatureSection({ title, children, id }: Props) {
   return (
     <>
-      <div className="flex justify-center text-5xl font-bold my-3" id="courses">
+      <div className="flex justify-center text-5xl font-bold my-3" id={id}>
         <p className="font-poppins text-5xl">{title}</p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-7 justify-center">{children}</div>
+      <div className="grid md:grid-cols-3 gap-7 justify-center my-4 mx-6">
+        {children}
+      </div>
     </>
   );
 }

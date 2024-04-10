@@ -3,4 +3,5 @@ export default interface Course {
   title?: string;
   image?: string;
   description?: string;
+  url: string;
 }

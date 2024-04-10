@@ -37,45 +37,35 @@ const testimonials: ITestimonial[] = [
 const courses = [
   {
     id: "543",
-    title: "Modern blues",
+    title: "Modern Metal",
+    url: "https://www.youtube.com/watch?v=nAoLCfDj74c",
     image: "https://picsum.photos/seed/picsum/200/300",
-    description: "Modern blues guitar licks",
+    description: "Learn modern metal soloing",
   },
   {
     id: "123",
-    title: "Modern Metal",
+    title: "Rock",
     image: "https://picsum.photos/seed/picsum/200/300",
-    description: "Modern metal guitar licks",
+    url: "https://www.youtube.com/watch?v=K1aDfZg4-Cc&t=5s",
+    description: "Learn your favorite rock solos",
   },
   {
     id: "234",
-    title: "Modern Jazz",
+    title: "Jazz/Fusion",
     image: "https://picsum.photos/seed/picsum/200/300",
-    description: "Modern jazz guitar licks",
+    url: "https://www.youtube.com/watch?v=QJJpRAIIu5o",
+    description: "Learn scales and technique",
   },
 ];
 
 const instructors = [
   {
     id: "543",
-    name: "James Tokoca",
-    image: "https://i.pravatar.cc/300",
-    location: "Japan",
-    style: "Blues",
-  },
-  {
-    id: "543",
-    name: "Julio Prada",
-    image: "https://i.pravatar.cc/350",
-    location: "Venezuela",
-    style: "Jazz",
-  },
-  {
-    id: "543",
-    name: "Ramon Joselo",
-    image: "https://i.pravatar.cc/400",
-    location: "Mexico",
-    style: "Metal",
+    name: "Alexson Coelho",
+    image:
+      "https://yt3.googleusercontent.com/ytc/AIdro_keshUrRL2lMntoS6ovGBcJ3FpXitQnyWXyxPnHkT5fLw=s176-c-k-c0x00ffffff-no-rj",
+    location: "USA",
+    style: "Rock/Metal",
   },
 ];
 
@@ -84,7 +74,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <FeatureSection title="Courses" id="courses">
+      <FeatureSection title="Styles" id="styles">
         {courses.map((course) => (
           <FeatureCard item={course} key={course.id} />
         ))}

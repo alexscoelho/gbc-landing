@@ -27,4 +27,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f gbc-landing
       - name: Run docker container
-        run: docker run -d -p 8081:8081 --name gbc-landing alexsoncoelho/gbc-landing
+        run: docker run -d -p 80:80 --name gbc-landing alexsoncoelho/gbc-landing

@@ -16,7 +16,14 @@ function InstructorCard({ item }: Props) {
         <p>{style}</p>
         <p>{location}</p>
         <div className="card-actions">
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-primary">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@baritonerguitarrista/videos"
+            >
+              Youtube Channel
+            </a>
+          </button>
         </div>
       </div>
     </div>

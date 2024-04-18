@@ -13,7 +13,11 @@ function FeatureSection({ title, children, id }: Props) {
         <p className="font-poppins text-5xl">{title}</p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-7 justify-center my-4 mx-6">
+      <div
+        className={`grid md:grid-cols-${
+          title === "Instructors" ? "1" : "3"
+        } gap-7 justify-center my-4 mx-6 place-items-center`}
+      >
         {children}
       </div>
     </>

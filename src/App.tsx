@@ -6,31 +6,27 @@ import FeatureSection from "./components/featureSection";
 import ITestimonial from "./models/Testimonial";
 import SlidesShow from "./components/slidesShow";
 import InstructorCard from "./components/instructorCard";
+import { PriceCard } from "./components/priceCard";
+import { Footer } from "./components/footer";
 
 const testimonials: ITestimonial[] = [
   {
     id: "123",
     avatar: "https://i.pravatar.cc/300",
     comment: "Great intructors, the course was well structured",
-    name: "John Doe",
+    name: "Ana",
   },
   {
     id: "234",
     avatar: "https://i.pravatar.cc/250",
-    comment: "Great intructors, the course was well structured",
-    name: "Carl Doe",
+    comment: "Now i can play my favorite songs",
+    name: "Steven",
   },
   {
     id: "345",
     avatar: "https://i.pravatar.cc/350",
-    comment: "Great intructors, the course was well structured",
-    name: "Trevor Doe",
-  },
-  {
-    id: "567",
-    avatar: "https://i.pravatar.cc/350",
-    comment: "Great intructors, the course was well structured",
-    name: "Jane Doe",
+    comment: "Just started to learn guitar, made good progress in short time",
+    name: "Christian",
   },
 ];
 
@@ -61,7 +57,7 @@ const courses = [
 const instructors = [
   {
     id: "543",
-    name: "Alexson Coelho",
+    name: "Alex",
     image:
       "https://yt3.googleusercontent.com/ytc/AIdro_keshUrRL2lMntoS6ovGBcJ3FpXitQnyWXyxPnHkT5fLw=s176-c-k-c0x00ffffff-no-rj",
     location: "USA",
@@ -74,17 +70,19 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <FeatureSection title="Styles" id="styles">
+      <FeatureSection title="Courses" id="courses">
         {courses.map((course) => (
           <FeatureCard item={course} key={course.id} />
         ))}
       </FeatureSection>
       <SlidesShow items={testimonials} />
-      <FeatureSection title="1 on 1" id="1 on 1">
+      <FeatureSection title="Instructors" id="instructors">
         {instructors.map((instructor) => (
           <InstructorCard item={instructor} key={instructor.id} />
         ))}
       </FeatureSection>
+      <PriceCard />
+      <Footer />
     </>
   );
 }

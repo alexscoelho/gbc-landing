@@ -43,18 +43,15 @@ function Navbar() {
                   <a href="#courses">Courses</a>
                 </li>
                 <li>
-                  <a href="#1 on 1">1 on 1</a>
+                  <a href="#instructors">Instructors</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Pricing</a>
+              <a href="#price">Price</a>
             </li>
             <li>
               <a>About Us</a>
-            </li>
-            <li>
-              <a>Blog</a>
             </li>
           </ul>
         </div>
@@ -82,24 +79,17 @@ function Navbar() {
                 <a href="#courses">Courses</a>
               </li>
               <li>
-                <a href="#1 on 1">1 on 1</a>
+                <a href="#instructors">Instructors</a>
               </li>
             </ul>
           </li>
           <li>
-            <a>Pricing</a>
+            <a href="#price">Price</a>
           </li>
           <li>
             <a>About Us</a>
           </li>
-          <li>
-            <a>Blog</a>
-          </li>
         </ul>
-      </div>
-      <div className="navbar-end gap-3">
-        <a className="btn">Sign In</a>
-        <a className="btn">Sign Up</a>
       </div>
     </div>
   );

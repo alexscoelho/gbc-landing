@@ -10,17 +10,21 @@ function SlidesShow({ items }: Props) {
     <div className="carousel w-full">
       {items.map((item, index) => {
         return (
-          <div id={`slide${index}`} className="carousel-item relative w-full">
+          <div
+            key={item.id}
+            id={`student${index}`}
+            className="carousel-item relative w-full"
+          >
             <Testimonial item={item} />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a
-                href={`#slide${index === 0 ? items.length - 1 : index - 1}`}
+                href={`#student${index === 0 ? items.length - 1 : index - 1}`}
                 className="btn btn-circle"
               >
                 ❮
               </a>
               <a
-                href={`#slide${index < items.length - 1 ? index + 1 : 0}`}
+                href={`#student${index < items.length - 1 ? index + 1 : 0}`}
                 className="btn btn-circle"
               >
                 ❯

@@ -8,6 +8,7 @@ import SlidesShow from "./components/slidesShow";
 import InstructorCard from "./components/instructorCard";
 import { PriceCard } from "./components/priceCard";
 import { Footer } from "./components/footer";
+import { GearAdvisor } from "./components/gearAdvisor";
 
 const testimonials: ITestimonial[] = [
   {
@@ -76,12 +77,13 @@ function App() {
         ))}
       </FeatureSection>
       <SlidesShow items={testimonials} />
-      <FeatureSection title="Instructors" id="instructors">
+      <FeatureSection title="Instructors" id="instructors" columns={1}>
         {instructors.map((instructor) => (
           <InstructorCard item={instructor} key={instructor.id} />
         ))}
       </FeatureSection>
       <PriceCard />
+      <GearAdvisor />
       <Footer />
     </>
   );

@@ -6,11 +6,13 @@ export const PriceCard = () => {
           <h2 className="card-title">Online 1hr Lessons</h2>
           <p>$70</p>
           <div className="card-actions justify-end">
-            <div
-              className="tooltip"
-              data-tip="guitarbootcampcenter@lessons.com"
-            >
-              <button className="btn">Email</button>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/elmusicoalex/?igsh=MTQ4azExYno3czU4ZA%3D%3D&utm_source=qr"
+              >
+                <button className="btn">Contact Now</button>
+              </a>
             </div>
           </div>
         </div>

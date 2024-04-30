@@ -45,6 +45,9 @@ function Navbar() {
                 <li>
                   <a href="#instructors">Instructors</a>
                 </li>
+                <li>
+                  <a href="#gearAdvisor">Gear Advisor</a>
+                </li>
               </ul>
             </li>
             <li>
@@ -52,6 +55,9 @@ function Navbar() {
             </li>
             <li>
               <a>About Us</a>
+            </li>
+            <li>
+              <a>Contact Info</a>
             </li>
           </ul>
         </div>
@@ -81,6 +87,9 @@ function Navbar() {
               <li>
                 <a href="#instructors">Instructors</a>
               </li>
+              <li>
+                <a href="#gearAdvisor">Gear Advisor</a>
+              </li>
             </ul>
           </li>
           <li>
@@ -88,6 +97,9 @@ function Navbar() {
           </li>
           <li>
             <a>About Us</a>
+          </li>
+          <li>
+            <a>Contact Info</a>
           </li>
         </ul>
       </div>

@@ -15,20 +15,17 @@ export const GearAdvisor = () => {
           <div className="card-body">
             <h2 className="card-title">Let's chat about gear</h2>
             <p className="text-sm">
-              Hey there! Ready to dive into the world of guitar gear? From
-              sleek, shredding axes to dreamy pedals that transport you to
-              another dimension of sound, there's always something exciting to
-              explore. Whether you're a seasoned pro or just starting out, let's
-              chat about your favorite guitars, amps, effects, or anything else
-              that makes your fingers itch to play. So, what's your go-to gear
-              that makes you feel like a rockstar?
+              I'm a Passionate guitarist, devoted musician, and experienced
+              instructor sharing the love for music and the art of guitar
+              playing. Let's dive into the world of strings, amplifiers, and
+              effects together! 🎸
             </p>
             <div className="card-actions justify-end">
               <a
                 target="_blank"
-                href="https://www.instagram.com/elmusicoalex/?igsh=MTQ4azExYno3czU4ZA%3D%3D&utm_source=qr"
+                href="https://linktr.ee/elmusicoalex?utm_source=linktree_admin_share"
               >
-                <button className="btn">Contact Now</button>
+                <button className="btn">Start Now</button>
               </a>
             </div>
           </div>

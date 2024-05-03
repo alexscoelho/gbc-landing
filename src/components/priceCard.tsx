@@ -3,8 +3,7 @@ export const PriceCard = () => {
     <div className="flex justify-center" id="price">
       <div className="card w-96 bg-primary text-primary-content">
         <div className="card-body">
-          <h2 className="card-title">Online 1hr Lessons</h2>
-          <p>$70</p>
+          <h2 className="card-title">Online & In Person 60 minutes Lessons</h2>
           <div className="card-actions justify-end">
             <div>
               <a

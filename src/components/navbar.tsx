@@ -51,13 +51,12 @@ function Navbar() {
               </ul>
             </li>
             <li>
-              <a href="#price">Price</a>
-            </li>
-            <li>
-              <a>About Us</a>
-            </li>
-            <li>
-              <a>Contact Info</a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/elmusicoalex/?igsh=MTQ4azExYno3czU4ZA%3D%3D&utm_source=qr"
+              >
+                Contact Us
+              </a>
             </li>
           </ul>
         </div>
@@ -92,14 +91,14 @@ function Navbar() {
               </li>
             </ul>
           </li>
+
           <li>
-            <a href="#price">Price</a>
-          </li>
-          <li>
-            <a>About Us</a>
-          </li>
-          <li>
-            <a>Contact Info</a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/elmusicoalex/?igsh=MTQ4azExYno3czU4ZA%3D%3D&utm_source=qr"
+            >
+              Contact Us
+            </a>
           </li>
         </ul>
       </div>

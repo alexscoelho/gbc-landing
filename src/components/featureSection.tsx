@@ -15,7 +15,7 @@ function FeatureSection({ title, children, id, columns = 3 }: Props) {
       </div>
 
       <div
-        className={`grid md:grid-cols-${columns} gap-3 justify-center my-4 mx-6 place-items-center`}
+        className={`grid md:grid-cols-${columns} gap-3 justify-center my-4 mx-3 place-items-center`}
       >
         {children}
       </div>

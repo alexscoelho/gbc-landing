@@ -10,11 +10,10 @@ interface Props {
 }
 
 function FeatureCard({ item }: Props) {
-  const { title, image, description, url } = item;
-  const [showTabs, setShowTabs] = useState(false);
+  const { title, description } = item;
   const [showVideoSlow, setShowVideoSlow] = useState(false);
   return (
-    <div className="card w-4/12 bg-base-100 shadow-xl">
+    <div className="card w-full bg-base-100 shadow-xl">
       <div className="card-body items-center text-center">
         <h2 className="card-title">{title}</h2>
         {showVideoSlow ? (
@@ -38,12 +37,7 @@ function FeatureCard({ item }: Props) {
           Your browser does not support the audio tag.
         </audio>
         <div className="card-actions">
-          <button
-            className="btn btn-primary"
-            onClick={() => setShowTabs(!showTabs)}
-          >
-            {showTabs ? "Hide" : "Show"} Tabs
-          </button>
+            <a className="btn btn-primary" href={tabs} target="_blank">See Tabs</a>
           <button
             className="btn btn-primary"
             onClick={() => setShowVideoSlow(!showVideoSlow)}
@@ -51,11 +45,6 @@ function FeatureCard({ item }: Props) {
             {showVideoSlow ? "Fast" : "Slow"} Video
           </button>
         </div>
-        {showTabs && (
-          <>
-            <embed src={tabs} type="application/pdf" width="430" height="300" />
-          </>
-        )}
       </div>
     </div>
   );

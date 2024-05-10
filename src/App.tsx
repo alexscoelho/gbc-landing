@@ -13,24 +13,10 @@ import instructor from "./assets/instructor.jpeg";
 const courses = [
   {
     id: "543",
-    title: "Modern Metal",
+    title: "Pentatonic 3 Notes Per String",
     url: "https://www.youtube.com/watch?v=nAoLCfDj74c",
     image: "https://picsum.photos/seed/picsum/200/300",
-    description: "Learn modern metal soloing",
-  },
-  {
-    id: "123",
-    title: "Rock",
-    image: "https://picsum.photos/seed/picsum/200/300",
-    url: "https://www.youtube.com/watch?v=K1aDfZg4-Cc&t=5s",
-    description: "Learn your favorite rock solos",
-  },
-  {
-    id: "234",
-    title: "Jazz/Fusion",
-    image: "https://picsum.photos/seed/picsum/200/300",
-    url: "https://www.youtube.com/watch?v=QJJpRAIIu5o",
-    description: "Learn scales and technique",
+    description: "3 notes per string pentatonic, legatto",
   },
 ];
 
@@ -49,7 +35,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <FeatureSection title="Courses" id="courses" columns={3}>
+      <FeatureSection title="Free Courses" id="courses" columns={3}>
         {courses.map((course) => (
           <FeatureCard item={course} key={course.id} />
         ))}
